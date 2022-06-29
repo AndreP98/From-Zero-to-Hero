@@ -1,0 +1,38 @@
+
+//Push
+// permite agregar elementos al final del array
+// NO USAR CONST pues el array se va a modificar
+
+let numArray  = [1,2,3,4,5]
+
+function addNumber(){
+    numArray.push(6,7)
+}
+
+
+console.log(numArray)
+
+addNumber()
+
+console.log(numArray)
+
+
+//Shift
+// Eliminar 1er elemento del array
+
+let numArray2  = [1,2,3,4,5]
+
+function shiftArray(){
+    numArray2.shift()
+}
+
+console.log(numArray2)
+
+shiftArray()
+
+console.log(numArray2)
+
+// Pop 
+// Eliminar ultimo elemento del Array
+
+

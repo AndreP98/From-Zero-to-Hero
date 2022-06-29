@@ -1,0 +1,36 @@
+const articulos = [
+    { nombre: "Bici", costo: 3000}, 
+    { nombre: "TV", costo : 2500},
+    { nombre: "Libro", costo : 320},
+    { nombre: "Celular", costo : 10000},
+    { nombre: "Laptop", costo : 20000},
+    { nombre: "Teclado", costo : 500},
+    { nombre: "Audifonos", costo : 1700},
+];
+
+
+//find  
+
+const encuentraArticulo =articulos.find(function(articulo){
+    return articulo.nombre === "Laptop"
+});
+
+console.log(encuentraArticulo)   
+
+//forEach
+ //no genera un array, solo filtra y retorna
+ //Retorna propiedad especificada de cada item del array  
+ 
+ articulos.forEach(function(articulo){
+    console.log(articulo.nombre);
+});
+
+//Some
+// evalua si hay articulos que cumplan la condicion especificada 
+//e.g. Costo < 700, true/false
+
+const articulosBaratos = articulos.some(function(articulo){
+    return articulo.costo <= 700
+});
+
+
